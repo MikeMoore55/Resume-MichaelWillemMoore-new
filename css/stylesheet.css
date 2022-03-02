@@ -3,9 +3,18 @@
 *{box-sizing: border-box;}
 *{scroll-behavior: smooth;}
 
+.navlist-override{
+    padding: 1% 2% 1% 5%;
+    margin: none;
+}
+
 .navlink-override{
     font-size: 1.5em;
     margin: 1% 2% 1% 2%;
+}
+
+.icon-img{
+    width: 1em;
 }
 
 .header{
@@ -254,6 +263,8 @@ h4{
 }
 
 @media (min-width: 900px){
+    .navlink-override{
+    font-size: 1.2em}
     .header{
     background-image: url(/images/forest-img-large.jpg);
     background-size: cover;
@@ -287,5 +298,8 @@ h4{
 
     .carouselindicators-override{
         margin: 1%;
+    }
+    .social-links{
+        width: 30%;
     }
 }
