@@ -28,7 +28,7 @@
     background-image: url(/images/forest-img-small.jpg);/* img found on pexels.com */
 }
 
-#profile-img{
+.profile-img{
     border-radius: 50%;
     box-shadow: 1px 2px 2px 2px rgb(68, 68, 68);
     position: relative;
@@ -36,7 +36,7 @@
     margin: 19% 30% 10% 30%;
 }
 
-#intro{
+.intro{
     font-family: cursive;
     font-size: 150%;
     font-weight: 500;
@@ -45,7 +45,7 @@
     color: white;
 }
 
-#name{
+.name{
     font-family: 'Courier New', Courier, monospace;
     font-size: 200%;
     font-weight: 700;
@@ -54,7 +54,7 @@
     color: rgb(165, 164, 164);
 }
 
-#end{
+.end{
     font-family: cursive;
     font-size: 150%;
     font-weight: 500;
@@ -63,15 +63,6 @@
     color: white;
 }
 
-.col1-override{
-    text-align: right;
-    border-right: solid 2px #7C99B4;
-}
-
-.co2l-override{
-    text-align: left;
-
-}
 
 .main{
     width: 100%;
@@ -111,20 +102,20 @@ h3{
 .about-container{
     background-color: #41524B;
     margin-bottom: 0%;
-    padding: 5% 15% 5% 15%;
+    padding: 10% 15% 5% 15%;
     font-size: 1.3em;
     color: rgb(192, 192, 192);
 }
 .education-container{
     background-color: #41524B;
     font-size: 1.3em;
-    padding: 5% 15% 5% 15%;
+    padding: 10% 15% 5% 15%;
     color: rgb(192, 192, 192);
 }
 .experience-container{
     background-color: #41524B;
     font-size: 1.3em;
-    padding: 5% 15% 5% 15%;
+    padding: 10% 15% 5% 15%;
     color: rgb(192, 192, 192);
 }
 
@@ -140,13 +131,9 @@ h3{
 /* this is for styling the caption of the 2 carousels */
 .carouselcaption-override{
     font-family: cursive;
-    font-size: 1em;
+    font-size: 1.3em;
 }
-/* this is for the bottom bar of the carousel which indicates the slide number */
-.carouselindicators-override{
-    margin: 5%;
-}
-
+/* for the quote card */
 .card-override{
     margin: 10% 12% 10% 12%;
     border: solid 4px #7C99B4;
@@ -176,7 +163,7 @@ h4{
 .contact-form:hover{
     box-shadow: 0px 5px 10px 10px rgb(51, 51, 51) ;
 }
-
+/* this helps me obtain the style and postion for my contact form */
 .formlabel-override{
     height: 10%;
     width: 60%;
@@ -189,7 +176,10 @@ h4{
 .social-media{
     display: flex;
 }
-/* style the social media link images */
+
+/* style for the social media link images */
+
+/* seperated each of them to allow for an animation delay between them */
 .instagram-link{
     width: 50%;
     border-radius: 50%;
@@ -238,15 +228,6 @@ h4{
     }
 }
 
-@keyframes button-animation{
-    from{
-        transform: scale(.2);
-    }
-    
-    to{
-        transform: scale(1);
-    }
-}
 
 /* ALL media queries can be found here */
 @media (min-width: 490px){
@@ -289,10 +270,6 @@ h4{
         width: 24%;
         margin: 7% 38% 0% 38%;
     }
-    .gridcontainer-override{
-        font-size: 2em;
-        margin: 5% 10% 10% 5%;
-    }
 
     #intro{
         font-size: 1.8em;
@@ -306,14 +283,32 @@ h4{
     #end{
         font-size: 1.8em;
     }
+    h1{
+        font-size: 2.8em;
+    }
     .carousel-img{
         width: 30%;
         height: 20%;
         margin: 5% 35% 20% 35%;
     }
+    .about-container{
+        font-size: 2em;
+    }
+
+    .education-container{
+        font-size: 2em;
+    }
+
+    .experience-container{
+        font-size: 2em;
+    }
 
     .carouselindicators-override{
         margin: 1%;
+    }
+
+    .card-override{
+        font-size: 1.5em;
     }
     .social-links{
         width: 30%;
