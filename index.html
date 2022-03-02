@@ -1,348 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link rel="stylesheet" href="/css/stylesheet.css" />
 
-    <link rel="icon" href="/images/M-tab-favicon.png">
+    <link rel="icon" href="/images/M-tab-favicon.png" />
 
     <title>MichaelMoore</title>
-</head>
-<body>
-    <nav class="position-fixed fixed-top navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link navlink-override active" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navlink-override" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navlink-override" href="#skill">Skills</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link navlink-override dropdown-toggle" href="#education" id="dropdown08" data-bs-toggle="dropdown" aria-expanded="false">Education</a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown08">
-                  <li><a class="dropdown-item navlink-override" href="#highschool">High School Diploma</a></li>
-                  <li><a class="dropdown-item navlink-override" href="#intro-web">Intro To Web</a></li>
-                  <li><a class="dropdown-item navlink-override" href="#web-design">Web Design</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navlink-override" href="#experience">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link navlink-override" href="#interests">Interests</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <header id="home" class="header">  
-        <picture>
-            <source srcset="/images/profile-img-large.jpg"
-                    media="(min-width: 900px)">
-            <source srcset="/images/profile-img-med.jpg"
-                    media="(min-width: 490px)">
-            <img id="profile-img" src="/images/profile-img-small.jpg" alt="" />
-        </picture>
-        <p id="intro">Hi, my name is,</p>
-        <p id="name">Michael Moore</p>
-        <p id="end">Nice to meet you</p>
+  </head>
+  <body>
 
-        <div class="container gridcontainer-override">
-            <div class="row">
-                <div class="col">
-                    web-developer
-                </div>
-                <div class="col">
-                    game-developer
-                </div>
-            </div>
-        </div>
-        
+    <!-- bootstrap nav bar element -->
+    <nav
+      class="position-fixed fixed-top navbar navbar-expand-lg navbar-dark bg-dark"
+      aria-label="Tenth navbar example"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample08"
+          aria-controls="navbarsExample08"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div
+          class="collapse navbar-collapse justify-content-md-center"
+          id="navbarsExample08"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link navlink-override active"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navlink-override" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navlink-override" href="#skill">Skills</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link navlink-override dropdown-toggle"
+                href="#education"
+                id="dropdown08"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Education</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="dropdown08">
+                <li>
+                  <a class="dropdown-item navlink-override" href="#highschool"
+                    >High School Diploma</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item navlink-override" href="#intro-web"
+                    >Intro To Web</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item navlink-override" href="#web-design"
+                    >Web Design</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navlink-override" href="#experience"
+                >Experience</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navlink-override" href="#interests"
+                >Interests</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header id="home" class="header">
+      <!-- for picture element i have the same picture but at different sizes to match the viewport -->
+      <picture>
+        <source
+          srcset="/images/profile-img-large.jpg"
+          media="(min-width: 900px)"
+        />
+        <source
+          srcset="/images/profile-img-med.jpg"
+          media="(min-width: 490px)"
+        />
+        <img id="profile-img" src="/images/profile-img-small.jpg" alt="" />
+      </picture>
+
+      <!-- this was done like so, because it makes editing and moving around with media queries better and more customizable -->
+      <p id="intro">Hi, my name is,</p>
+      <p id="name">Michael Moore</p>
+      <p id="end">Nice to meet you</p>
+
+      <!-- bootstrap grid element -->
+      <div class="container gridcontainer-override">
+        <div class="row">
+          <div class="col-6 col1-override">web-developer</div>
+          <div class="col-6 col2-override">game-developer</div>
+        </div>
+      </div>
     </header>
     <main class="main">
-        <section id="about" class="container-fluid about-container">
-            <h2>about</h2>
-            <p>I am a 17 year old male, who has a passion for learning new things and
-              who has an even bigger passion for anything tech related, whether it
-              be software, robotics, or electronic devices...i am passionate about
-              them all and want to be involved as much as possible to further the
-              capabilities of technology as we know it.</p>
-        </section>
-        <section id="skill" class="skills-carousel">
-            <h2>skills</h2>
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators carouselindicators-override ">
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <img class="carousel-img d-block" src="/images/3d-modeling.png" alt="...">
-                    <div class="carousel-caption carouselcaption-override d-md-block">
-                      <h5>3D Design</h5>
-                    </div>
-                  </div>
-                  <div class="carousel-item justify-content-md-center" data-bs-interval="2000">
-                    <img class="carousel-img" src="/images/c-logo.png" alt="...">
-                    <div class="carousel-caption carouselcaption-override d-md-block">
-                      <h5>Coding: C#</h5>
-                    </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img class="carousel-img" src="/images/html.png"  alt="...">
-                    <div class="carousel-caption carouselcaption-override d-md-block">
-                      <h5>Coding: HTML 5</h5>
-                    </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img  class="carousel-img"src="/images/css-3.png"  alt="...">
-                    <div class="carousel-caption carouselcaption-override d-md-block">
-                      <h5>Coding: CSS 3</h5>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="carousel-img" src="/images/game-development.png" alt="...">
-                    <div class="carousel-caption carouselcaption-override d-md-block">
-                      <h5>Game Development</h5>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </section>
-        <section id="education" class="content-container">
-            <h2>education</h2>
-            <h3 id="highschool">highschool diploma</h3>
-            <p></p>
-            <h4>Type:</h4>
-            International GED Certificate
-            <p></p>
-            <h4>Completed:</h4>
-            2021
-            <h4>Marks:</h4>
-            <ol class="list-container">
-              <li>RLA = 159/200</li>
-              <li>SS = 163/200</li>
-              <li>Science = 162/200</li>
-              <li>Math = 168/200</li>
-            </ol>
-            <h4>Description</h4>
-            <p>
-              In 2021 i enrolled into the GED syllabus and at the end of the year i
-              Completed my International GED Certificate at the age of 17.
-            </p>
-            <h3 id="intro-web">intro to web</h3>
-            <p></p>
-            <h4>Type:</h4>
-            Course
-            <p></p>
-            <h4>Course:</h4>
-            Intro to Web
-            <h4>Completed:</h4>
-            2022
-    
-            <p></p>
-            <h4>Provider / Institution:</h4>
-            CodeSpace Academy
-            <h4>Description :</h4>
-            <p>
-              In 2022 i enrolled into the Software Engineering Course provided by
-              CodeSpace Academy, as of lately I have only completed the Intro to Web
-              Course.
-            </p>
-            <h3 id="web-design">web-design</h3>
-            <p></p>
-            <h4>Type:</h4>
-            Course
-            <p></p>
-            <h4>Course:</h4>
-            Web Design
-            <p></p>
-            <h4>Completed:</h4>
-            2022
-    
-            <p></p>
-            <h4>Provider / Institution :</h4>
-            CodeSpace Academy
-    
-            <h4>Description :</h4>
-            <p>
-              In 2022 i enrolled into the Software Engineering Course provided by
-              CodeSpace Academy, as of lately I have only completed the Intro to Web
-              and Web Design Course.
-            </p>
-        </section>
-        <section>
-            <div class="card card-override">
-                <div class="card-header">
-                The Best Quote Ever!
-                </div>
-                <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                    <p>"In school we learn that mistakes are bad, and we are punished for making them. Yet, if you look at the way humans are designed to learn, we learn by making mistakes. We learn to walk by falling down. If we never fell down, we would never walk.” </p>
-                    <footer class="blockquote-footer">Robert T. Kiyosaki <cite title="Source Title">Rich Dad, Poor Dad</cite></footer>
-                </blockquote>
-                </div>
-            </div>
-        </section>
-        <section id="experience" class="content-container">
-          <h2>experience</h2>
-          <h3>Game-Development FreeLancing</h3>
-          <h4>When:</h4>
-          <p>01/03/2021-31/05/2021</p>
-          <h4>Company/business:</h4>
-          <p>
-            freelancing/private [it was for 2 small game developers based in USA]
-          </p>
 
-          <p>
-            I was helping 2 small games developers I knew, part time, with
-            developing their first game.
-          </p>
-          <h3>"Youtuber" & "Streamer"</h3>
-          <h3>When:</h3>
-          <p>20/01/2020 - 04/12/2021</p>
-          <p>
-            I ran my own youtube channel and twitch channel for about one year. i
-            did my own recording, editing and publishing as well managed my own
-            social accounts for the channels. (stopped doing this so i could do my
-            Software Engineering course [as of now channels have been deleted,
-            they had collectively 110 followers.])
-          </p>
-        </section>
-        <section id="interests" class="interests-carousel">
-            <h2>skills</h2>
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators carouselindicators-override ">
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <img class="carousel-img d-block" src="/images/ai.png" alt="...">
-                    <div class="carousel-caption carouselcaption-override d-md-block">
-                      <h5>AI Technology</h5>
-                    </div>
-                  </div>
-                  <div class="carousel-item justify-content-md-center" data-bs-interval="2000">
-                    <img class="carousel-img" src="/images/electric-car.png" alt="...">
-                    <div class="carousel-caption carouselcaption-override d-md-block">
-                      <h5>Cars</h5>
-                    </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img class="carousel-img" src="/images/desktop-computer.png"  alt="...">
-                    <div class="carousel-caption carouselcaption-override d-md-block">
-                      <h5>Technology</h5>
-                    </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img  class="carousel-img" src="/images/industrial-robot.png"  alt="...">
-                    <div class="carousel-caption carouselcaption-override d-md-block">
-                      <h5>Robotics</h5>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="carousel-img" src="/images/portfolio.png" alt="...">
-                    <div class="carousel-caption carouselcaption-override d-md-block">
-                      <h5>Business</h5>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </section>
-        <section>
-          <div class="card card-override">
-              <div class="card-header">
-              A Quote to Remember!
-              </div>
-              <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                  <p>“Practice leads to perfection and perfection leads to succession.”  </p>
-                  <footer class="blockquote-footer"> Amanda Jensen <cite title="Source Title">Speech by Amanda Jensen</cite></footer>
-              </blockquote>
-              </div>
-          </div>
+      <!-- bootstrap container element -->
+      <section id="about" class="container-fluid about-container">
+        <h1>about</h1>
+        <p>
+          I am a 17 year old male, who has a passion for learning new things and
+          who has an even bigger passion for anything tech related, whether it
+          be software, robotics, or electronic devices...i am passionate about
+          them all and want to be involved as much as possible to further the
+          capabilities of technology as we know it.
+        </p>
       </section>
-      <section>
-        <div class="jumbotron jumbotron-override">
-          <h1 class="display-4">E-mail Me:</h1>
-          <p class="lead">Use this "magical" button to email me and get in touch, i would love to hear from you!</p>
-            <a class="btn btn-primary btn-lg" href="mailto:michaelwillemmoore@gmail.com"
-            title="email me: michaelwillemmoore@gmail.com"
-            target="_blank"" role="button">E-mail Me</a>
-          </p>
+      <!-- bootstrap carousel element -->
+      <section id="skill" class="skills-carousel">
+        <h1>skills</h1>
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators carouselindicators-override">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                class="carousel-img d-block"
+                src="/images/3d-modeling.png"
+                alt="..."
+              />
+              <div class="carousel-caption carouselcaption-override d-md-block">
+                <h5>3D Design</h5>
+              </div>
+            </div>
+            <div
+              class="carousel-item justify-content-md-center"
+              data-bs-interval="2000"
+            >
+              <img class="carousel-img" src="/images/c-logo.png" alt="..." />
+              <div class="carousel-caption carouselcaption-override d-md-block">
+                <h5>Coding: C#</h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img class="carousel-img" src="/images/html.png" alt="..." />
+              <div class="carousel-caption carouselcaption-override d-md-block">
+                <h5>Coding: HTML 5</h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img class="carousel-img" src="/images/css-3.png" alt="..." />
+              <div class="carousel-caption carouselcaption-override d-md-block">
+                <h5>Coding: CSS 3</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="carousel-img"
+                src="/images/game-development.png"
+                alt="..."
+              />
+              <div class="carousel-caption carouselcaption-override d-md-block">
+                <h5>Game Development</h5>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
+      <section id="education" class="content-container">
+        <h1>education</h1>
+        <h2 id="highschool">highschool diploma</h2>
+        <p></p>
+        <h3>Type:</h3>
+        International GED Certificate
+        <p></p>
+        <h3>Completed:</h3>
+        2021
+        <h3>Marks:</h3>
+        <ol class="list-container">
+          <li>RLA = 159/200</li>
+          <li>SS = 163/200</li>
+          <li>Science = 162/200</li>
+          <li>Math = 168/200</li>
+        </ol>
+        <h3>Description</h3>
+        <p>
+          In 2021 i enrolled into the GED syllabus and at the end of the year i
+          Completed my International GED Certificate at the age of 17.
+        </p>
+        <h2 id="intro-web">intro to web</h2>
+        <p></p>
+        <h3>Type:</h3>
+        Course
+        <p></p>
+        <h3>Course:</h3>
+        Intro to Web
+        <h3>Completed:</h3>
+        2022
+
+        <p></p>
+        <h3>Provider / Institution:</h3>
+        CodeSpace Academy
+        <h3>Description :</h3>
+        <p>
+          In 2022 i enrolled into the Software Engineering Course provided by
+          CodeSpace Academy, as of lately I have only completed the Intro to Web
+          Course.
+        </p>
+        <h2 id="web-design">web-design</h2>
+        <p></p>
+        <h3>Type:</h3>
+        Course
+        <p></p>
+        <h3>Course:</h3>
+        Web Design
+        <p></p>
+        <h3>Completed:</h3>
+        2022
+
+        <p></p>
+        <h3>Provider / Institution :</h3>
+        CodeSpace Academy
+
+        <h3>Description :</h3>
+        <p>
+          In 2022 i enrolled into the Software Engineering Course provided by
+          CodeSpace Academy, as of lately I have only completed the Intro to Web
+          and Web Design Course.
+        </p>
+      </section>
+      <!-- bootstrap card element -->
+      <section>
+        <div class="card card-override">
+          <div class="card-header">The Best Quote Ever!</div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>
+                "In school we learn that mistakes are bad, and we are punished
+                for making them. Yet, if you look at the way humans are designed
+                to learn, we learn by making mistakes. We learn to walk by
+                falling down. If we never fell down, we would never walk.”
+              </p>
+              <footer class="blockquote-footer">
+                Robert T. Kiyosaki
+                <cite title="Source Title">Rich Dad, Poor Dad</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="content-container">
+        <h1>experience</h1>
+        <h2>Game-Development FreeLancing</h2>
+        <h3>When:</h3>
+        <p>01/03/2021-31/05/2021</p>
+        <h3>Company/business:</h3>
+        <p>
+          freelancing/private [it was for 2 small game developers based in USA]
+        </p>
+
+        <p>
+          I was helping 2 small games developers I knew, part time, with
+          developing their first game.
+        </p>
+        <h3>"Youtuber" & "Streamer"</h3>
+        <h3>When:</h3>
+        <p>20/01/2020 - 04/12/2021</p>
+        <p>
+          I ran my own youtube channel and twitch channel for about one year. i
+          did my own recording, editing and publishing as well managed my own
+          social accounts for the channels. (stopped doing this so i could do my
+          Software Engineering course [as of now channels have been deleted,
+          they had collectively 110 followers.])
+        </p>
+      </section>
+
+    <!-- bootstrap carousel element number 2 -->
+    <!-- this interest carousel follows a very similar design to the skills carousel -->
+      <section id="interests" class="interests-carousel">
+        <h1>skills</h1>
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators carouselindicators-override">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                class="carousel-img d-block"
+                src="/images/ai.png"
+                alt="..."
+              />
+              <div class="carousel-caption carouselcaption-override d-md-block">
+                <h5>AI Technology</h5>
+              </div>
+            </div>
+            <div
+              class="carousel-item justify-content-md-center"
+              data-bs-interval="2000"
+            >
+              <img
+                class="carousel-img"
+                src="/images/electric-car.png"
+                alt="..."
+              />
+              <div class="carousel-caption carouselcaption-override d-md-block">
+                <h5>Cars</h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                class="carousel-img"
+                src="/images/desktop-computer.png"
+                alt="..."
+              />
+              <div class="carousel-caption carouselcaption-override d-md-block">
+                <h5>Technology</h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                class="carousel-img"
+                src="/images/industrial-robot.png"
+                alt="..."
+              />
+              <div class="carousel-caption carouselcaption-override d-md-block">
+                <h5>Robotics</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="carousel-img" src="/images/portfolio.png" alt="..." />
+              <div class="carousel-caption carouselcaption-override d-md-block">
+                <h5>Business</h5>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section> 
+      <!-- bootstrap jumbotron element -->
+      <section>
+        
+        <div class="jumbotron jumbotron-override">
+          <h4 class="display-4">E-mail Me:</h4>
+          <p class="lead">
+            Use this "magical" button to email me, i would love
+            to hear from you!
+          </p>
+          <a class="btn btn-primary btn-lg button-override"
+          href="mailto:michaelwillemmoore@gmail.com" title="email me:
+          michaelwillemmoore@gmail.com" target="_blank"" role="button">E-mail Me</a>
+        </div>
+      </section>
+      <!-- bootstrap card element number 2 -->
+      <section>
+        <div class="card card-override">
+          <div class="card-header">A Quote to Remember!</div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>
+                “Practice leads to perfection and perfection leads to
+                succession.”
+              </p>
+              <footer class="blockquote-footer">
+                Amanda Jensen
+                <cite title="Source Title">Speech by Amanda Jensen</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+     
+      <!-- as you can see my footer is under my main, i did this like so, because this allows me to have it as a relative position and not have to struggle aligning it the way i want -->
+      <!-- bootstrap container element -->
       <footer class="container-fluid footer">
         <div class="container">
           <div class="row">
-            <div class="col-4 d-flex justify-content-center ">
-          <a
-              href="https://www.instagram.com/the1theonly_michaelmoore/"
-              title="my instagram account = the1theonly_michaelmoore"
-              target="_blank"
-              ><img class="social-links" src="/images/instagram-icon.png"
-            /></a>
-          </div>
-          <div class="col-4 d-flex justify-content-center">
-            <a
-              href="https://www.linkedin.com/in/michael-moore-66a249231/"
-              title="my linkedin account = michael moore"
-              target="_blank"
-              ><img class="social-links" src="/images/linkedin-icon.png"
-            /></a>
-          </div>
-          <div class="col-4 d-flex justify-content-center">
-            <a
-              href=" https://github.com/MikeMoore55"
-              title="my github account = MikeMoore55"
-              target="_blank"
-              ><img class="social-links" src="/images/github-icon.png" />
-            </a>
-          </div>
+            <div class="col-4 d-flex justify-content-center">
+              <a
+                href="https://www.instagram.com/the1theonly_michaelmoore/"
+                title="my instagram account = the1theonly_michaelmoore"
+                target="_blank"
+                ><img class="social-links" src="/images/instagram-icon.png"
+              /></a>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+              <a
+                href="https://www.linkedin.com/in/michael-moore-66a249231/"
+                title="my linkedin account = michael moore"
+                target="_blank"
+                ><img class="social-links" src="/images/linkedin-icon.png"
+              /></a>
+            </div>
+            <div class="col-4 d-flex justify-content-center">
+              <a
+                href=" https://github.com/MikeMoore55"
+                title="my github account = MikeMoore55"
+                target="_blank"
+                ><img class="social-links" src="/images/github-icon.png" />
+              </a>
+            </div>
           </div>
         </div>
       </footer>
-
     </main>
-    
-</body>
+  </body>
 </html>
