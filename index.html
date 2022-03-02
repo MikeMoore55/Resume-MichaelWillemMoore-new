@@ -126,14 +126,6 @@
       <p id="intro">Hi, my name is,</p>
       <p id="name">Michael Moore</p>
       <p id="end">Nice to meet you</p>
-
-      <!-- bootstrap grid element -->
-      <div class="container gridcontainer-override">
-        <div class="row">
-          <div class="col-6 col1-override">web-developer</div>
-          <div class="col-6 col2-override">game-developer</div>
-        </div>
-      </div>
     </header>
     <main class="main">
 
@@ -338,20 +330,39 @@
       <section id="experience" class="experience-container">
         <h1>experience</h1>
         <h2>Game-Development FreeLancing</h2>
-        <h3>When:</h3>
-        <p>01/03/2021-31/05/2021</p>
-        <h3>Company/business:</h3>
-        <p>
-          freelancing/private [it was for 2 small game developers based in USA]
-        </p>
-
+        <!-- made use of bootstrap grid -->
+        <div class="row">
+          <div class="col-6">
+          <h3>When:</h3>
+          <p>01/03/2021-31/05/2021</p>
+          </div>
+          <div class="col-6">
+          <h3>Type:</h3>
+          <p>
+            freelance
+          </p>
+        </div>
+        </div>
+        <h3>Description:</h3>
         <p>
           I was helping 2 small games developers I knew, part time, with
           developing their first game.
         </p>
-        <h3>"Youtuber" & "Streamer"</h3>
-        <h3>When:</h3>
-        <p>20/01/2020 - 04/12/2021</p>
+        <h2>"Youtuber" & "Streamer"</h2>
+        <!-- made use of bootstrap grid -->
+        <div class="row">
+          <div class="col-6">
+          <h3>When:</h3>
+          <p>20/01/2020-04/12/2021</p>
+          </div>
+          <div class="col-6">
+          <h3>Type:</h3>
+          <p>
+            n/a
+          </p>
+        </div>
+        </div>
+        <h3>Description:</h3>
         <p>
           I ran my own youtube channel and twitch channel for about one year. i
           did my own recording, editing and publishing as well managed my own
@@ -475,52 +486,84 @@
           </button>
         </div>
       </section> 
-      <!-- bootstrap jumbotron element -->
-      <section id="contact">
+      <!-- bootstrap form-element -->
+      <section id="contact" class="contact-form">
+        <h1>contact me:</h1>
+        <div class="container py-4">
+
+          <!-- Bootstrap 5 starter form -->
+          <form id="contactForm" data-sb-form-api-token="API_TOKEN">
         
-        <div class="jumbotron jumbotron-override">
-          <h4 class="display-4">E-mail Me:</h4>
-          <p class="lead">
-            Use this "magical" button to email me, i would love
-            to hear from you!
-          </p>
-          <a class="btn btn-primary btn-lg button-override"
-          href="mailto:michaelwillemmoore@gmail.com" title="email me:
-          michaelwillemmoore@gmail.com" target="_blank"" role="button">E-mail Me</a>
+            <!-- Name input -->
+            <div class="mb-3">
+              <label class="form-label formlabel-override" for="name">Name</label>
+              <input class="form-control" id="form-name" type="text" placeholder="Name" data-sb-validations="required" />
+              <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+            </div>
+        
+            <!-- Email address input -->
+            <div class="mb-3">
+              <label class="form-label formlabel-override" for="emailAddress">Email Address</label>
+              <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+              <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+              <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+            </div>
+        
+            <!-- Message input -->
+            <div class="mb-3">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+              <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+            </div>
+        
+            <!-- Form submissions success message -->
+            <div class="d-none" id="submitSuccessMessage">
+              <div class="text-center mb-3">Form submission successful!</div>
+            </div>
+        
+            <!-- Form submissions error message -->
+            <div class="d-none" id="submitErrorMessage">
+              <div class="text-center text-danger mb-3">Error sending message!</div>
+            </div>
+        
+            <!-- Form submit button -->
+            <div class="d-grid">
+              <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+            </div>
+        
+          </form>
+        
         </div>
+        
+        <!-- SB Forms JS -->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
       </section>
      
       <!-- as you can see my footer is under my main, i did this like so, because this allows me to have it as a relative position and not have to struggle aligning it the way i want -->
       <!-- bootstrap container element -->
       <footer class="container-fluid footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-4 d-flex justify-content-center">
-              <a
-                href="https://www.instagram.com/the1theonly_michaelmoore/"
-                title="my instagram account = the1theonly_michaelmoore"
-                target="_blank"
-                ><img class="social-links" src="/images/instagram-icon.png"
-              /></a>
-            </div>
-            <div class="col-4 d-flex justify-content-center">
-              <a
-                href="https://www.linkedin.com/in/michael-moore-66a249231/"
-                title="my linkedin account = michael moore"
-                target="_blank"
-                ><img class="social-links" src="/images/linkedin-icon.png"
-              /></a>
-            </div>
-            <div class="col-4 d-flex justify-content-center">
-              <a
-                href=" https://github.com/MikeMoore55"
-                title="my github account = MikeMoore55"
-                target="_blank"
-                ><img class="social-links" src="/images/github-icon.png" />
-              </a>
-            </div>
-          </div>
-        </div>
+       <div class="social-media">
+          <a
+            href="https://www.instagram.com/the1theonly_michaelmoore/"
+            title="my instagram account = the1theonly_michaelmoore"
+            target="_blank"
+          > <img class="instagram-link" src="/images/instagram-icon.png"
+          /></a>
+        
+          <a
+            href="https://www.linkedin.com/in/michael-moore-66a249231/"
+            title="my linkedin account = michael moore"
+            target="_blank"
+          > <img class="linkedin-link" src="/images/linkedin-icon.png"
+          /></a>
+            
+          <a
+            href=" https://github.com/MikeMoore55"
+            title="my github account = MikeMoore55"
+            target="_blank"
+          > <img class="github-link" src="/images/github-icon.png" />
+          </a>
+        </div>    
       </footer>
     </main>
   </body>
