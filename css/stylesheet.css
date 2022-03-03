@@ -235,62 +235,93 @@ h4{
     background-image: url(/images/forest-img-med.jpg);
     background-size: cover;
     }
-    #profile-img{
+
+    .profile-img{
         width: 35%;
         margin: 12% 30% 0% 30%;
     }
-    .gridcontainer-override{
-        font-size: 2em;
-        margin: 5% 10% 10% 10%;
-    }
 
-    #intro{
+    .intro{
         font-size: 2em;
     }
 
-    #name{
+    .name{
         font-size: 3em;
     }
 
-    #end{
+    .end{
         font-size: 2em;
     }
 
-}
+    h1{
+        font-size: 3em;
+    }
 
+    .about-container{
+        font-size: 1.7em;
+    }
+    .education-container{
+        font-size: 1.7em;
+    }
+
+    .experience-container{
+        font-size: 1.7em;
+    }
+
+    .instagram-link{
+        width: 30%;
+        margin: 4% 2% 4% 50%;
+    }
+    
+    .linkedin-link{
+        width: 30%;
+        margin: 4% 2% 4% 50%;
+    }
+
+    .github-link{
+        width: 30%;
+        margin: 4% 10% 4% 50%;
+    }
+}
 
 @media (min-width: 900px){
     .navlink-override{
-    font-size: 1.2em}
+    font-size: 1.2em
+    }
+
     .header{
     background-image: url(/images/forest-img-large.jpg);
     background-size: cover;
     }
-    #profile-img{
+
+    .profile-img{
         width: 24%;
-        margin: 7% 38% 0% 38%;
+        margin: 5% 38% 0% 38%;
     }
 
-    #intro{
+    .intro{
         font-size: 1.8em;
     }
 
-    #name{
+    .name{
         font-size: 3em;
         color: rgb(0, 0, 0);
     }
 
-    #end{
+    .end{
         font-size: 1.8em;
     }
+
     h1{
         font-size: 2.8em;
     }
+
     .carousel-img{
         width: 30%;
         height: 20%;
         margin: 5% 35% 20% 35%;
     }
+
     .about-container{
         font-size: 2em;
     }
@@ -310,7 +341,19 @@ h4{
     .card-override{
         font-size: 1.5em;
     }
-    .social-links{
+
+    .instagram-link{
         width: 30%;
+        margin: 2% 2% 2% 100%;
+    }
+
+    .linkedin-link{
+        width: 30%;
+        margin: 2% 2% 2% 100%;
+    }
+    
+    .github-link{
+        width: 30%;
+        margin: 2% 10% 2% 100%;
     }
 }
