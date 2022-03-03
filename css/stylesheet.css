@@ -25,7 +25,7 @@
     right: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/images/forest-img-small.jpg);/* img found on pexels.com */
+    background-image: url(../images/forest-img-small.jpg);/* img found on pexels.com */
 }
 
 .profile-img{
@@ -232,7 +232,7 @@ h4{
 /* ALL media queries can be found here */
 @media (min-width: 490px){
     .header{
-    background-image: url(/images/forest-img-med.jpg);
+    background-image: url(../images/forest-img-med.jpg);
     background-size: cover;
     }
 
@@ -290,7 +290,7 @@ h4{
     }
 
     .header{
-    background-image: url(/images/forest-img-large.jpg);
+    background-image: url(../images/forest-img-large.jpg);
     background-size: cover;
     }
 
