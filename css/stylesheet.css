@@ -165,16 +165,18 @@ h4{
 }
 /* this helps me obtain the style and postion for my contact form */
 .formlabel-override{
-    height: 10%;
+    height: auto;
     width: 60%;
 }
 .footer{
     position: relative;
     background-color: #41524B;
+    align-self: center;
 }
 
 .social-media{
     display: flex;
+    margin: 2% 20% 0% 20%;
 }
 
 /* style for the social media link images */
@@ -183,7 +185,6 @@ h4{
 .instagram-link{
     width: 50%;
     border-radius: 50%;
-    margin: 2% 2% 2% 10%;
     animation-name: socialmedia-animation;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -192,7 +193,6 @@ h4{
 .linkedin-link{
     width: 50%;
     border-radius: 50%;
-    margin: 2% 5% 2% 0%;
     animation-name: socialmedia-animation;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -202,7 +202,6 @@ h4{
 .github-link{
     width: 50%;
     border-radius: 50%;
-    margin: 2% 10% 2% 0%;
     animation-name: socialmedia-animation;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -268,19 +267,19 @@ h4{
         font-size: 1.7em;
     }
 
+    .social-media{
+        margin: 2% 25% 0% 25%;
+    }
     .instagram-link{
-        width: 30%;
-        margin: 4% 2% 4% 50%;
+        width: 50%;
     }
     
     .linkedin-link{
-        width: 30%;
-        margin: 4% 2% 4% 50%;
+        width: 50%;
     }
 
     .github-link{
-        width: 30%;
-        margin: 4% 10% 4% 50%;
+        width: 50%;
     }
 }
 
@@ -292,6 +291,10 @@ h4{
     .header{
     background-image: url(../images/forest-img-large.jpg);
     background-size: cover;
+    }
+
+    .icon-img{
+        width: 1.5em;
     }
 
     .profile-img{
@@ -342,18 +345,19 @@ h4{
         font-size: 1.5em;
     }
 
+    .social-media{
+        margin: 2% 30% 0% 30%;
+    }
+
     .instagram-link{
-        width: 30%;
-        margin: 2% 2% 2% 100%;
+        width: 50%;
     }
 
     .linkedin-link{
-        width: 30%;
-        margin: 2% 2% 2% 100%;
+        width: 50%;
     }
     
     .github-link{
-        width: 30%;
-        margin: 2% 10% 2% 100%;
+        width: 50%;
     }
 }
