@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <!-- this webpage is deployed, https://mikemoore55.github.io/Resume-MichaelWillemMoore-new/ , heres the link -->
 
   <head>
@@ -7,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+
+    <!-- bootstrap links -->
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -27,6 +30,8 @@
   </head>
   <body>
     <!-- bootstrap nav bar element -->
+
+    <!-- nav content doesn't shrink as viewport becomes smaller, the content becomes bigger to allow an easier to navigate through and "touch" the desired content -->
     <nav
       class="position-fixed fixed-top navbar navbar-dark bg-dark"
       aria-label="Tenth navbar example"
@@ -48,6 +53,9 @@
           class="collapse navbar-collapse justify-content-md-center"
           id="navbarsExample08"
         >
+
+        <!-- I have changed the nav icons, these icons are found on google images and made in iconmonstr.io -->
+
           <ul class="navbar-nav navlist-override">
             <li class="nav-item">
               <a
@@ -153,7 +161,7 @@
       </div>
     </nav>
     <header id="home" class="header">
-      <!-- for picture element i have the same picture but at different sizes to match the viewport -->
+      <!-- for picture element i have the same picture but at different sizes (so its one photo which has been cropped smaller to ensure better quality at different viewport sizes)-->
       <picture>
         <source
           srcset="./images/profile-img-large.jpg"
@@ -166,11 +174,12 @@
         <img class="profile-img" src="./images/profile-img-small.jpg" alt="" />
       </picture>
 
-      <!-- this was done like so, because it makes editing and moving around with media queries better and more customizable -->
+      <!-- this was done like so, because it makes editing and moving the elements around with media queries better and more customizable instead of having a <div> or as one element -->
       <p class="intro">Hi, my name is,</p>
       <p class="name">Michael Moore</p>
       <p class="end">Nice to meet you</p>
     </header>
+
     <main class="main">
       <!-- bootstrap container element -->
       <section id="about" class="about-container">
@@ -230,7 +239,7 @@
               <img
                 class="carousel-img d-block"
                 src="./images/3d-modeling.png"
-                alt="..."
+                alt="skills image"
               />
               <div class="carousel-caption carouselcaption-override d-md-block">
                 <h5>3D Design</h5>
@@ -240,19 +249,19 @@
               class="carousel-item justify-content-md-center"
               data-bs-interval="2000"
             >
-              <img class="carousel-img" src="./images/c-logo.png" alt="..." />
+              <img class="carousel-img" src="./images/c-logo.png" alt="skills image" />
               <div class="carousel-caption carouselcaption-override d-md-block">
                 <h5>Coding: C#</h5>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img class="carousel-img" src="./images/html.png" alt="..." />
+              <img class="carousel-img" src="./images/html.png" alt="skills image" />
               <div class="carousel-caption carouselcaption-override d-md-block">
                 <h5>Coding: HTML 5</h5>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img class="carousel-img" src="./images/css-3.png" alt="..." />
+              <img class="carousel-img" src="./images/css-3.png" alt="skills image" />
               <div class="carousel-caption carouselcaption-override d-md-block">
                 <h5>Coding: CSS 3</h5>
               </div>
@@ -261,7 +270,7 @@
               <img
                 class="carousel-img"
                 src="./images/game-development.png"
-                alt="..."
+                alt="skills image"
               />
               <div class="carousel-caption carouselcaption-override d-md-block">
                 <h5>Game Development</h5>
@@ -413,7 +422,9 @@
       </section>
 
       <!-- bootstrap carousel element number 2 -->
+
       <!-- this interest carousel follows a very similar design to the skills carousel -->
+
       <section id="interests" class="interests-carousel">
         <h1 class="main-heading">Interests</h1>
         <div
@@ -460,7 +471,7 @@
               <img
                 class="carousel-img d-block"
                 src="./images/ai.png"
-                alt="..."
+                alt="interest image"
               />
               <div class="carousel-caption carouselcaption-override d-md-block">
                 <h5>AI Technology</h5>
@@ -473,7 +484,7 @@
               <img
                 class="carousel-img"
                 src="./images/electric-car.png"
-                alt="..."
+                alt="interest image"
               />
               <div class="carousel-caption carouselcaption-override d-md-block">
                 <h5>Cars</h5>
@@ -483,7 +494,7 @@
               <img
                 class="carousel-img"
                 src="./images/desktop-computer.png"
-                alt="..."
+                alt="interest image"
               />
               <div class="carousel-caption carouselcaption-override d-md-block">
                 <h5>Technology</h5>
@@ -493,7 +504,7 @@
               <img
                 class="carousel-img"
                 src="./images/industrial-robot.png"
-                alt="..."
+                alt="interest image"
               />
               <div class="carousel-caption carouselcaption-override d-md-block">
                 <h5>Robotics</h5>
@@ -503,7 +514,7 @@
               <img
                 class="carousel-img"
                 src="./images/portfolio.png"
-                alt="..."
+                alt="interest image"
               />
               <div class="carousel-caption carouselcaption-override d-md-block">
                 <h5>Business</h5>
@@ -532,12 +543,14 @@
       </section>
 
       <!-- bootstrap form-element -->
+
+      <!-- this form does not work 100% as i don't know much of php and java script -->
       <section id="contact" class="contact-form">
         <h1>contact me:</h1>
         <div class="container py-4">
           <!-- Bootstrap 5 starter form -->
           <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-            <!-- Name input -->
+
             <div class="mb-3">
               <label class="form-label formlabel-override" for="name"
                 >Name</label
@@ -554,7 +567,6 @@
               </div>
             </div>
 
-            <!-- Email address input -->
             <div class="mb-3">
               <label class="form-label formlabel-override" for="emailAddress"
                 >Email Address</label
@@ -580,7 +592,6 @@
               </div>
             </div>
 
-            <!-- Message input -->
             <div class="mb-3">
               <label class="form-label" for="message">Message</label>
               <textarea
@@ -596,19 +607,16 @@
               </div>
             </div>
 
-            <!-- Form submissions success message -->
             <div class="d-none" id="submitSuccessMessage">
               <div class="text-center mb-3">Form submission successful!</div>
             </div>
 
-            <!-- Form submissions error message -->
             <div class="d-none" id="submitErrorMessage">
               <div class="text-center text-danger mb-3">
                 Error sending message!
               </div>
             </div>
 
-            <!-- Form submit button -->
             <div class="d-grid">
               <button
                 class="btn btn-primary btn-lg disabled"
